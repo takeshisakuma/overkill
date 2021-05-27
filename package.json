@@ -8,11 +8,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "nojekyll": "cpx \".nojekyll\" out ",
     "export": "next build && next export",
-    "predeploy": "next export",
-    "deploy": "gh-pages -d out",
+    "ghp": "gh-pages -d out",
     "lint:scss": "stylelint \"pages/*.scss\"",
-    "format:scss": "stylelint --fix \"pages/*.scss\""
+    "format:scss": "stylelint --fix \"pages/*.scss\"",
+    "deploy": "run-s build export nojekyll ghp"
   },
   "repository": {
     "type": "git",
@@ -35,10 +36,12 @@
     "@types/react": "^17.0.8",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.25.0",
+    "cpx": "^1.5.0",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "gh-pages": "^3.2.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.3.0",
     "sass": "^1.34.0",
     "stylelint": "^13.13.1",
