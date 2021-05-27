@@ -9,8 +9,10 @@
     "build": "next build",
     "start": "next start",
     "export": "next build && next export",
-    "predeploy": "export",
-    "deploy": "gh-pages -d out"
+    "predeploy": "next export",
+    "deploy": "gh-pages -d out",
+    "lint:scss": "stylelint \"pages/*.scss\"",
+    "format:scss": "stylelint --fix \"pages/*.scss\""
   },
   "repository": {
     "type": "git",
