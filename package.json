@@ -8,12 +8,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "nojekyll": "cpx \".nojekyll\" out ",
     "export": "next build && next export",
-    "ghp": "gh-pages -d out",
     "lint:scss": "stylelint \"pages/*.scss\"",
-    "format:scss": "stylelint --fix \"pages/*.scss\"",
-    "deploy": "run-s build export nojekyll ghp"
+    "format:scss": "stylelint --fix \"pages/*.scss\""
   },
   "repository": {
     "type": "git",

@@ -15,6 +15,7 @@ const Main = () => (
       pagePath={"https://takeshisakuma.github.io/overkill/"}
     />
     <p className={styles.test}>next.js test2</p>
+    <Image src="/test.png" height={100} width={100} quality={50} alt="test" />
   </>
 );
 export default Main;
