@@ -14,7 +14,7 @@ const Main = () => (
       pageImgHeight={960}
       pagePath={"https://takeshisakuma.github.io/overkill/"}
     />
-    <p className={styles.test}>next.js test8</p>
+    <p className={styles.test}>next.js test9</p>
     <Image src="/test.png" height={100} width={100} quality={50} alt="test" />
   </>
 );
