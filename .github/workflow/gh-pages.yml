@@ -11,10 +11,15 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+
+
     - name: setup node
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
+
     - name: Cache dependencies
       uses: actions/cache@v1
       with:
@@ -22,6 +27,7 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
+
     - name: install
       run: npm install --frozen-lockfile
 
