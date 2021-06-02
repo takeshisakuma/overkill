@@ -1,5 +1,5 @@
 module.exports = {
-  basePath: "/overkill",
+  //basePath: "/overkill",
   assetPrefix: "/overkill",
   trailingSlash: true,
   exportPathMap: function () {
