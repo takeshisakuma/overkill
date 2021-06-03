@@ -1,0 +1,8 @@
+@mixin rem($size) {
+  font-size: $size + px; /*IE9以下で反映されるよう記述*/
+  font-size: ($size / 16) + rem;
+}
+
+/* 使用例：100pxをremで
+ @include rem(100)
+*/

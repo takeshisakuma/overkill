@@ -1,21 +1,23 @@
 import React from "react";
 import Seo from "../components/seo/Seo";
-import Image from "next/image";
+import Header from "../components/header/Header";
+import Visual from "../components/visual/Visual";
 
 import styles from "./index.module.scss";
 
 const Main = () => (
   <>
     <Seo
-      pageTitle={"Internet Explorer 11"}
-      pageDescription={"Internet Explorer 11"}
-      pageImg={"https://takeshisakuma.github.io/overkill/img/ogp.png"}
+      pageTitle={"20220615"}
+      pageDescription={"Internet Explorer まだ使っている人はいませんか？"}
+      pageImg={"https://takeshisakuma.github.io/overkill/ogp/ogp.png"}
       pageImgWidth={1280}
       pageImgHeight={960}
       pagePath={"https://takeshisakuma.github.io/overkill/"}
     />
-    <p className={styles.test}>next.js test9</p>
-    <Image src="/test.png" height={100} width={100} quality={50} alt="test" />
+    <Header text="20210615" />
+    <Visual text={`Internet Explorer${"\n"}まだ使っている人はいませんか？`} />
+    <img src="/overkill/test.png" />
   </>
 );
 export default Main;

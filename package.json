@@ -13,7 +13,8 @@
     "ghp": "gh-pages -d out",
     "lint:scss": "stylelint \"pages/*.scss\"",
     "format:scss": "stylelint --fix \"pages/*.scss\"",
-    "deploy": "build && export && touch out/.nojekyll && ghp",
+    "deploy": "next build && next export && touch out/.nojekyll",
+    "postdeploy": "gh-pages -d out",
     "deploy1": "run-s build export nojekyll ghp"
   },
   "repository": {

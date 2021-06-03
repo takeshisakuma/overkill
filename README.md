@@ -1,9 +1,12 @@
 # 20220615
 
 ## GitHubPages
+npm run deploy
 https://takeshisakuma.github.io/overkill/
 
-
+## Local
+npm run dev
+http://localhost:3000/overkill/
 
 ## IE11対応状況
 

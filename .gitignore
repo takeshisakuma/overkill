@@ -105,4 +105,5 @@ dist
 
 # Next.js
 /.next
-/out
+
+# /out
