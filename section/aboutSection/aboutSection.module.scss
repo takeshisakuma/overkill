@@ -1,0 +1,134 @@
+@use "../../styles/colors.scss";
+@use "../../styles/fonts.scss";
+@use "../../styles/device.scss";
+
+@media screen and (max-width: device.$spMax) {
+  .aboutConteiner {
+    background-color: #dde9f1;
+    .aboutContent {
+      overflow: hidden;
+      padding: 0 20px 40px;
+      width: 100%;
+    }
+  }
+
+  .headerSection {
+    @include fonts.rem(20);
+    font-family: "Noto Serif JP", serif;
+    margin-top: 20px;
+  }
+  .textSection {
+    @include fonts.rem(14);
+    font-family: "Noto Sans JP", sans-serif;
+    margin-top: 8px;
+  }
+
+  .listTextGroup {
+    margin-top: 16px;
+    padding-left: 24px;
+    .listTextMember {
+      @include fonts.rem(14);
+      font-family: "Noto Sans JP", sans-serif;
+    }
+  }
+
+  .cautionText {
+    @include fonts.rem(14);
+    font-family: "Noto Sans JP", sans-serif;
+    padding-left: 16px;
+    position: relative;
+
+    &::before {
+      content: "※";
+      margin-left: -16px;
+      position: absolute;
+    }
+  }
+}
+@media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
+  .aboutConteiner {
+    background-color: #dde9f1;
+    .aboutContent {
+      overflow: hidden;
+      padding: 0 30px 60px;
+      width: 100%;
+    }
+  }
+
+  .headerSection {
+    @include fonts.rem(26);
+    font-family: "Noto Serif JP", serif;
+    margin-top: 30px;
+  }
+  .textSection {
+    @include fonts.rem(16);
+    font-family: "Noto Sans JP", sans-serif;
+    margin-top: 16px;
+  }
+
+  .listTextGroup {
+    margin-top: 32px;
+    padding-left: 24px;
+    .listTextMember {
+      @include fonts.rem(16);
+      font-family: "Noto Sans JP", sans-serif;
+    }
+  }
+
+  .cautionText {
+    @include fonts.rem(16);
+    font-family: "Noto Sans JP", sans-serif;
+    padding-left: 16px;
+    position: relative;
+
+    &::before {
+      content: "※";
+      margin-left: -16px;
+      position: absolute;
+    }
+  }
+}
+@media screen and (min-width: device.$pcMin) {
+  .aboutConteiner {
+    background-color: #dde9f1;
+    .aboutContent {
+      margin: 0 auto;
+      overflow: hidden;
+      padding-bottom: 80px;
+      width: 1400px;
+    }
+  }
+
+  .headerSection {
+    @include fonts.rem(36);
+    font-family: "Noto Serif JP", serif;
+    margin-top: 60px;
+  }
+  .textSection {
+    @include fonts.rem(16);
+    font-family: "Noto Sans JP", sans-serif;
+    margin-top: 20px;
+  }
+
+  .listTextGroup {
+    margin-top: 30px;
+    padding-left: 24px;
+    .listTextMember {
+      @include fonts.rem(16);
+      font-family: "Noto Sans JP", sans-serif;
+    }
+  }
+
+  .cautionText {
+    @include fonts.rem(16);
+    font-family: "Noto Sans JP", sans-serif;
+    padding-left: 16px;
+    position: relative;
+
+    &::before {
+      content: "※";
+      margin-left: -16px;
+      position: absolute;
+    }
+  }
+}
