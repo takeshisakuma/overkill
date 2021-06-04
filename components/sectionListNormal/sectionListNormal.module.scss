@@ -1,0 +1,35 @@
+@use "../../styles/colors.scss";
+@use "../../styles/device.scss";
+@use "../../styles/fonts.scss";
+
+.sectionListNormalGroup {
+  .sectionListNormalMember {
+    font-family: "Noto Sans JP", sans-serif;
+  }
+}
+
+@media screen and (max-width: device.$spMax) {
+  .sectionListNormalGroup {
+    padding-left: 20px;
+    .sectionListNormalMember {
+      @include fonts.rem(14);
+    }
+  }
+}
+
+@media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
+  .sectionListNormalGroup {
+    padding-left: 24px;
+    .sectionListNormalMember {
+      @include fonts.rem(16);
+    }
+  }
+}
+@media screen and (min-width: device.$pcMin) {
+  .sectionListNormalGroup {
+    padding-left: 24px;
+    .sectionListNormalMember {
+      @include fonts.rem(16);
+    }
+  }
+}

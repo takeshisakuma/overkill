@@ -1,0 +1,30 @@
+@use "../../styles/colors.scss";
+@use "../../styles/device.scss";
+@use "../../styles/fonts.scss";
+
+.sectionText {
+  font-family: "Noto Sans JP", sans-serif;
+  white-space: pre-wrap;
+
+  @media screen and (max-width: device.$spMax) {
+    @include fonts.rem(14);
+    & + .sectionText {
+      margin-top: 12px;
+    }
+  }
+
+  @media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
+    @include fonts.rem(15);
+    & + .sectionText {
+      margin-top: 16px;
+    }
+  }
+
+  @media screen and (min-width: device.$pcMin) {
+    @include fonts.rem(16);
+
+    & + .sectionText {
+      margin-top: 20px;
+    }
+  }
+}

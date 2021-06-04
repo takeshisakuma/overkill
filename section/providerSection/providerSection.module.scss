@@ -1,0 +1,77 @@
+@use "../../styles/colors.scss";
+@use "../../styles/fonts.scss";
+@use "../../styles/device.scss";
+
+.providerConteiner {
+  background-image: url(../../public/img/time-371226_1920.jpg);
+  background-position-y: 40%;
+
+  background-size: cover;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    background-color: rgba(255, 255, 255, 0.85);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .providerContent {
+    overflow: hidden;
+    position: relative;
+  }
+}
+@media screen and (max-width: device.$spMax) {
+  .providerConteiner {
+    .providerContent {
+      padding: 0 20px 40px;
+      width: 100%;
+
+      .sectionHeadingWrapper {
+        margin-top: 20px;
+      }
+
+      .sectionTextWrapper {
+        margin-top: 8px;
+      }
+    }
+  }
+}
+@media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
+  .providerConteiner {
+    .providerContent {
+      padding: 0 30px 60px;
+      width: 100%;
+
+      .sectionHeadingWrapper {
+        margin-top: 30px;
+      }
+
+      .sectionTextWrapper {
+        margin-top: 16px;
+      }
+    }
+  }
+}
+@media screen and (min-width: device.$pcMin) {
+  .providerConteiner {
+    .providerContent {
+      margin: 0 auto;
+      padding-bottom: 80px;
+      width: 1400px;
+
+      .sectionHeadingWrapper {
+        margin-top: 60px;
+      }
+
+      .sectionTextWrapper {
+        margin-top: 20px;
+      }
+    }
+  }
+}

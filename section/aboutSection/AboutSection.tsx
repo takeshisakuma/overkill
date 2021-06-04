@@ -2,30 +2,30 @@ import React, { FC } from "react";
 import aboutSectionType from "./aboutSectionType";
 import styles from "./aboutSection.module.scss";
 
+import SectionHeading from "../../components/sectionHeading/SectionHeading";
+import SectionText from "../../components/sectionText/SectionText";
+import SectionListNormal from "../../components/sectionListNormal/SectionListNormal";
+import SectionListCaution from "../../components/sectionListCaution/SectionListCaution";
 const AboutSection: FC<aboutSectionType> = ({
   headingText,
-  mainText,
-  listText,
-  cautionText,
+  paragraphText,
+  listNormal,
+  listCaution,
 }) => {
-  const heading = headingText;
-  const message = mainText;
-  const list = listText;
-  const caution = cautionText;
   return (
     <>
       <div className={styles.aboutConteiner}>
         <div className={styles.aboutContent}>
-          <h3 className={styles.headerSection}>{heading}</h3>
-          <p className={styles.textSection}>{message}</p>
-          <ul className={styles.listTextGroup}>
-            {list.map((member, index) => (
-              <li key={index} className={styles.listTextMember}>
-                {member}
-              </li>
-            ))}
-          </ul>
-          <p className={styles.cautionText}>{caution}</p>
+          <div className={styles.sectionHeadingWrapper}>
+            <SectionHeading>{headingText}</SectionHeading>
+          </div>
+          <div className={styles.sectionTextWrapper}>
+            <SectionText paragraphText={paragraphText}></SectionText>
+          </div>
+          <div className={styles.sectionListNormalWrapper}>
+            <SectionListNormal>{listNormal}</SectionListNormal>
+          </div>
+          <SectionListCaution>{listCaution}</SectionListCaution>
         </div>
       </div>
     </>

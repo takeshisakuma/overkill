@@ -1,0 +1,49 @@
+@use "../../styles/colors.scss";
+@use "../../styles/device.scss";
+@use "../../styles/fonts.scss";
+
+.headerContainer {
+  width: 100%;
+
+  .headerContent {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: device.$spMax) {
+  .headerContainer {
+    .headerContent {
+      padding: 0 10px 10px;
+
+      .headerHeadingWrapper {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
+  .headerContainer {
+    .headerContent {
+      padding: 0 20px 20px;
+
+      .headerHeadingWrapper {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: device.$pcMin) {
+  .headerContainer {
+    .headerContent {
+      margin: 0 auto;
+      padding-bottom: 40px;
+      width: 1400px;
+
+      .headerHeadingWrapper {
+        margin-top: 40px;
+      }
+    }
+  }
+}

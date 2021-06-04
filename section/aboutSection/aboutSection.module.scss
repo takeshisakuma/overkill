@@ -9,39 +9,18 @@
       overflow: hidden;
       padding: 0 20px 40px;
       width: 100%;
-    }
-  }
 
-  .headerSection {
-    @include fonts.rem(20);
-    font-family: "Noto Serif JP", serif;
-    margin-top: 20px;
-  }
-  .textSection {
-    @include fonts.rem(14);
-    font-family: "Noto Sans JP", sans-serif;
-    margin-top: 8px;
-  }
+      .sectionHeadingWrapper {
+        margin-top: 20px;
+      }
 
-  .listTextGroup {
-    margin-top: 16px;
-    padding-left: 24px;
-    .listTextMember {
-      @include fonts.rem(14);
-      font-family: "Noto Sans JP", sans-serif;
-    }
-  }
+      .sectionTextWrapper {
+        margin-top: 8px;
+      }
 
-  .cautionText {
-    @include fonts.rem(14);
-    font-family: "Noto Sans JP", sans-serif;
-    padding-left: 16px;
-    position: relative;
-
-    &::before {
-      content: "※";
-      margin-left: -16px;
-      position: absolute;
+      .sectionListNormalWrapper {
+        margin-top: 16px;
+      }
     }
   }
 }
@@ -52,39 +31,18 @@
       overflow: hidden;
       padding: 0 30px 60px;
       width: 100%;
-    }
-  }
 
-  .headerSection {
-    @include fonts.rem(26);
-    font-family: "Noto Serif JP", serif;
-    margin-top: 30px;
-  }
-  .textSection {
-    @include fonts.rem(16);
-    font-family: "Noto Sans JP", sans-serif;
-    margin-top: 16px;
-  }
+      .sectionHeadingWrapper {
+        margin-top: 30px;
+      }
 
-  .listTextGroup {
-    margin-top: 32px;
-    padding-left: 24px;
-    .listTextMember {
-      @include fonts.rem(16);
-      font-family: "Noto Sans JP", sans-serif;
-    }
-  }
+      .sectionTextWrapper {
+        margin-top: 16px;
+      }
 
-  .cautionText {
-    @include fonts.rem(16);
-    font-family: "Noto Sans JP", sans-serif;
-    padding-left: 16px;
-    position: relative;
-
-    &::before {
-      content: "※";
-      margin-left: -16px;
-      position: absolute;
+      .sectionListNormalWrapper {
+        margin-top: 32px;
+      }
     }
   }
 }
@@ -96,39 +54,18 @@
       overflow: hidden;
       padding-bottom: 80px;
       width: 1400px;
-    }
-  }
 
-  .headerSection {
-    @include fonts.rem(36);
-    font-family: "Noto Serif JP", serif;
-    margin-top: 60px;
-  }
-  .textSection {
-    @include fonts.rem(16);
-    font-family: "Noto Sans JP", sans-serif;
-    margin-top: 20px;
-  }
+      .sectionHeadingWrapper {
+        margin-top: 60px;
+      }
 
-  .listTextGroup {
-    margin-top: 30px;
-    padding-left: 24px;
-    .listTextMember {
-      @include fonts.rem(16);
-      font-family: "Noto Sans JP", sans-serif;
-    }
-  }
+      .sectionTextWrapper {
+        margin-top: 20px;
+      }
 
-  .cautionText {
-    @include fonts.rem(16);
-    font-family: "Noto Sans JP", sans-serif;
-    padding-left: 16px;
-    position: relative;
-
-    &::before {
-      content: "※";
-      margin-left: -16px;
-      position: absolute;
+      .sectionListNormalWrapper {
+        margin-top: 30px;
+      }
     }
   }
 }

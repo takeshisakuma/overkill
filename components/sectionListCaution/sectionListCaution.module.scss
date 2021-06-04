@@ -1,0 +1,54 @@
+@use "../../styles/colors.scss";
+@use "../../styles/device.scss";
+@use "../../styles/fonts.scss";
+
+.sectionListCautionGroup {
+  list-style-type: none;
+  .sectionListCautionMember {
+    font-family: "Noto Sans JP", sans-serif;
+    position: relative;
+    &::before {
+      content: "※";
+      position: absolute;
+    }
+  }
+}
+
+@media screen and (max-width: device.$spMax) {
+  .sectionListCautionGroup {
+    .sectionListCautionMember {
+      @include fonts.rem(14);
+      padding-left: 16px;
+
+      &::before {
+        margin-left: -16px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
+  .sectionListCautionGroup {
+    .sectionListCautionMember {
+      @include fonts.rem(16);
+      padding-left: 16px;
+
+      &::before {
+        margin-left: -16px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: device.$pcMin) {
+  .sectionListCautionGroup {
+    .sectionListCautionMember {
+      @include fonts.rem(16);
+      padding-left: 16px;
+
+      &::before {
+        margin-left: -16px;
+      }
+    }
+  }
+}

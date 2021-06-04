@@ -1,8 +1,8 @@
 type aboutSectionType = {
   headingText: string;
-  mainText: string;
-  listText: string[];
-  cautionText: string;
+  paragraphText: string[];
+  listNormal: string[];
+  listCaution: string[];
 };
 
 export default aboutSectionType;

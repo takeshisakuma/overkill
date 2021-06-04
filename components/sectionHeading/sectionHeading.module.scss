@@ -1,0 +1,20 @@
+@use "../../styles/colors.scss";
+@use "../../styles/device.scss";
+@use "../../styles/fonts.scss";
+
+.sectionHeading {
+  font-family: "Noto Serif JP", serif;
+
+  @media screen and (max-width: device.$spMax) {
+    @include fonts.rem(20);
+    margin-top: 20px;
+  }
+  @media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
+    @include fonts.rem(26);
+    margin-top: 30px;
+  }
+  @media screen and (min-width: device.$pcMin) {
+    @include fonts.rem(36);
+    margin-top: 60px;
+  }
+}

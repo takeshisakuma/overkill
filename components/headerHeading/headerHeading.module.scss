@@ -1,0 +1,18 @@
+@use "../../styles/colors.scss";
+@use "../../styles/device.scss";
+@use "../../styles/fonts.scss";
+
+.headerHeading {
+  color: colors.$textColor--black;
+  font-family: "Roboto", sans-serif;
+
+  @media screen and (max-width: device.$spMax) {
+    @include fonts.rem(16);
+  }
+  @media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
+    @include fonts.rem(20);
+  }
+  @media screen and (min-width: device.$pcMin) {
+    @include fonts.rem(30);
+  }
+}

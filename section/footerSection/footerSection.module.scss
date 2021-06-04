@@ -1,0 +1,49 @@
+@use "../../styles/colors.scss";
+@use "../../styles/device.scss";
+@use "../../styles/fonts.scss";
+
+.footerContainer {
+  background-color: black;
+  width: 100%;
+  .footerContent {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: device.$spMax) {
+  .footerContainer {
+    .footerContent {
+      padding: 0 10px 10px;
+
+      .footerHeadingWrapper {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
+  .footerContainer {
+    .footerContent {
+      padding: 0 20px 20px;
+
+      .footerHeadingWrapper {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: device.$pcMin) {
+  .footerContainer {
+    .footerContent {
+      margin: 0 auto;
+      padding-bottom: 40px;
+      width: 1400px;
+
+      .footerHeadingWrapper {
+        margin-top: 40px;
+      }
+    }
+  }
+}
