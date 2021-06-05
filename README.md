@@ -21,6 +21,8 @@ http://localhost:3000/overkill/
 |BASE|https://devblog.thebase.in/entry/ie-forever|
 |Beatport|IE11でアクセスすると表示不良|
 |Behance|IE11でアクセスすると非対応と表示される|
+|BOOTH|IE11でアクセスすると非対応と表示される|
+
 |CrowdWorks|https://blog.crowdworks.jp/?p=4293|
 |DeviantArt|IE11でアクセスすると非対応と表示される|
 |dribbble|IE11でアクセスすると表示不良|
@@ -41,6 +43,7 @@ http://localhost:3000/overkill/
 |Pinterest|IE11でアクセスすると非対応と表示される|
 |Pocket|IE11でアクセスすると表示不良|
 |Scrapbox|IE11でアクセスすると非対応と表示される|
+|Skeb|IE11でアクセスすると表示不良|
 |Sketchfab|IE11でアクセスすると非対応と表示される|
 |Spotify|IE11でアクセスすると非対応と表示される|
 |STORES|https://faq.stores.jp/hc/ja/articles/360006690452|
@@ -76,6 +79,7 @@ http://localhost:3000/overkill/
 - SharePoint
 - Microsoft Terms
 
+2021年8月17日でIE11のサポート終了
 ## Google Workspace
 
 - Google Calendar
@@ -92,6 +96,7 @@ http://localhost:3000/overkill/
 
 |ブラウザ|Google Workspaceの対応状況|
 |---|---|
+|IE|サポート終了|
 |Chrome|推奨|
 |Edge|一部機能がサポートされない場合がある|
 |Firefox|一部機能がサポートされない場合がある|

@@ -1,0 +1,159 @@
+@use "../../styles/colors.scss";
+@use "../../styles/device.scss";
+@use "../../styles/fonts.scss";
+
+.eventListCardGroup {
+  list-style-type: none;
+  .eventListCardMember {
+    background-color: #fff;
+
+    .eventListCardNameWrapper {
+      align-items: center;
+      display: flex;
+
+      .eventListImageWrapper {
+        .eventListImage {
+          height: auto;
+          width: 100%;
+        }
+      }
+
+      .eventListCardNameText {
+        font-family: "Noto Serif JP", serif;
+        font-weight: bold;
+      }
+    }
+
+    .eventListGroupWrapper {
+      .eventListGroup {
+        .eventListMember {
+          font-family: "Noto Sans JP", sans-serif;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: device.$spMax) {
+  .eventListCardGroup {
+    .eventListCardMember {
+      border: 4px solid #4f81ff;
+      border-radius: 12px;
+      padding: 0 20px 20px;
+      width: 100%;
+
+      & + .eventListCardMember {
+        margin-top: 20px;
+      }
+
+      .eventListCardNameWrapper {
+        gap: 8px;
+        margin-top: 20px;
+
+        .eventListImageWrapper {
+          height: 30px;
+          width: 30px;
+        }
+
+        .eventListCardNameText {
+          @include fonts.rem(20);
+        }
+      }
+
+      .eventListGroupWrapper {
+        margin-left: 24px;
+        margin-top: 10px;
+        .eventListGroup {
+          .eventListMember {
+            @include fonts.rem(12);
+            line-height: 1.8;
+            & + .eventListMember {
+              margin-top: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
+  .eventListCardGroup {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    .eventListCardMember {
+      border: 8px solid #4f81ff;
+      border-radius: 20px;
+      padding: 0 20px 20px;
+      width: 50%;
+
+      .eventListCardNameWrapper {
+        gap: 16px;
+        margin-top: 20px;
+
+        .eventListImageWrapper {
+          height: 40px;
+          width: 40px;
+        }
+
+        .eventListCardNameText {
+          @include fonts.rem(20);
+        }
+      }
+
+      .eventListGroupWrapper {
+        margin-left: 26px;
+        margin-top: 16px;
+        .eventListGroup {
+          .eventListMember {
+            @include fonts.rem(16);
+            & + .eventListMember {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: device.$pcMin) {
+  .eventListCardGroup {
+    display: flex;
+    justify-content: space-between;
+    .eventListCardMember {
+      border: 8px solid #4f81ff;
+      border-radius: 20px;
+      padding: 0 40px 40px;
+      width: 650px;
+
+      .eventListCardNameWrapper {
+        gap: 16px;
+        margin-top: 30px;
+
+        .eventListImageWrapper {
+          height: 50px;
+          width: 50px;
+        }
+
+        .eventListCardNameText {
+          @include fonts.rem(26);
+        }
+      }
+
+      .eventListGroupWrapper {
+        margin-left: 30px;
+        margin-top: 26px;
+        .eventListGroup {
+          .eventListMember {
+            @include fonts.rem(16);
+            & + .eventListMember {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,10 +4,12 @@
 
 .sectionText {
   font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.8;
   white-space: pre-wrap;
 
   @media screen and (max-width: device.$spMax) {
     @include fonts.rem(14);
+
     & + .sectionText {
       margin-top: 12px;
     }

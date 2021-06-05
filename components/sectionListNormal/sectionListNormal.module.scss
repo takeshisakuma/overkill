@@ -13,6 +13,9 @@
     padding-left: 20px;
     .sectionListNormalMember {
       @include fonts.rem(14);
+      & + .sectionListNormalMember {
+        margin-top: 2px;
+      }
     }
   }
 }
@@ -22,6 +25,9 @@
     padding-left: 24px;
     .sectionListNormalMember {
       @include fonts.rem(16);
+      & + .sectionListNormalMember {
+        margin-top: 3px;
+      }
     }
   }
 }
@@ -30,6 +36,10 @@
     padding-left: 24px;
     .sectionListNormalMember {
       @include fonts.rem(16);
+
+      & + .sectionListNormalMember {
+        margin-top: 4px;
+      }
     }
   }
 }

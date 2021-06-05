@@ -6,6 +6,7 @@ import HeaderSection from "../section/headerSection/HeaderSection";
 import VisualSection from "../section/visualSection/VisualSection";
 import AboutSection from "../section/aboutSection/AboutSection";
 import UnsupportSection from "../section/unsupportSection/UnsupportSection";
+import PastSection from "../section/pastSection/PastSection";
 import ProviderSection from "../section/providerSection/ProviderSection";
 import FooterSection from "../section/footerSection/FooterSection";
 
@@ -71,6 +72,7 @@ const Main = () => (
         { name: "Microsoft 365", img: "service/microsoft365.svg" },
         { name: "Pinterest", img: "service/pinterest.svg" },
         { name: "Pocket", img: "service/pocket.svg" },
+        { name: "Skeb", img: "service/skeb.svg" },
         { name: "Sketchfab", img: "service/sketchfab.svg" },
         { name: "STORES", img: "service/stores.svg" },
         { name: "STUDIO", img: "service/studio.svg" },
@@ -84,7 +86,21 @@ const Main = () => (
         { name: "WordPress", img: "dev/wordpress.svg" },
       ]}
     />
-    {/*<img src="/overkill/test.png" />*/}
+    <PastSection
+      headingText="Internet Explorer 11が公開された2013年はこんな年でした"
+      paragraphText={[
+        `変化の早いWebの世界では約10年は途方もなく長い時間です。あなたは10年前のデジタル製品を使いたいですか？ちなみに、iPhoneは5s(iOS7)が発売になった年です。`,
+        `それでは、2013年の出来事を振り返ってみましょう。
+        `,
+      ]}
+      listNormal={[
+        "Internet Explorer 10以前のバージョンはすでにサポートが終了しています。",
+        "Internet Explorer 11は、2022年6月15日(日本時間では16日)にサポートの終了が予告されています。",
+      ]}
+      listCaution={[
+        "Windows 10 LTSCやWindows Server上の Internet Explorer 11 デスクトップ アプリケーションは除く",
+      ]}
+    ></PastSection>
     <ProviderSection
       headingText={"Webサービス提供者様に向けて"}
       paragraphText={[
