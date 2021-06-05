@@ -49,7 +49,7 @@ http://localhost:3000/overkill/
 |tumblr|IE11でアクセスすると表示不良|
 |Twitch|IE11でアクセスすると6/7から非対応と表示される|
 |Twitter|IE11でアクセスすると非対応と表示される|
-|udemy|IE11でアクセスすると非対応と表示される|
+|Udemy|IE11でアクセスすると非対応と表示される|
 |YouTube|IE11でアクセスすると非対応と表示される|
 |YouTube Music|IE11でアクセスすると非対応と表示される|
 |はてなブックマーク|https://bookmark.hatenastaff.com/entry/2020/08/13/111055 |
@@ -63,6 +63,18 @@ http://localhost:3000/overkill/
 |Vue.js|Ver.3以降|
 |WordPress|Ver.5.8以降(2021/07)|
 
+## Microsoft 365
+- Outlook
+- Word
+- Excel
+- PowerPoint
+- OneNote
+- Access
+- Publisher
+- Exchange
+- OneDrive
+- SharePoint
+- Microsoft Terms
 
 ## Google Workspace
 
@@ -78,7 +90,7 @@ http://localhost:3000/overkill/
 - Google Meet
 - Google Sites
 
-|ブラウザ|対応状況|
+|ブラウザ|Google Workspaceの対応状況|
 |---|---|
 |Chrome|推奨|
 |Edge|一部機能がサポートされない場合がある|
@@ -100,3 +112,10 @@ edge://settings
 |なし|Edgeにリダイレクトしない|
 |互換性のないサイトのみ(推奨)|https://edge.microsoft.com/neededge/v1 記載のサイトはリダイレクト|
 |常に表示|IE11を起動するとEdgeにリダイレクトされる|
+
+## IE11用サイトアクセス時にIEモードを使う設定
+Edgeで下記を開く
+edge://settings
+
+設定 > 既定のブラウザー
+「Internet Explorerモードでサイトの再読み込みを許可」を「ON」にする

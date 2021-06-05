@@ -2,7 +2,7 @@
 @use "../../styles/fonts.scss";
 @use "../../styles/device.scss";
 
-.providerConteiner {
+.providerContainer {
   background-image: url(../../public/img/time-371226_1920.jpg);
   background-position-y: 40%;
 
@@ -27,7 +27,7 @@
   }
 }
 @media screen and (max-width: device.$spMax) {
-  .providerConteiner {
+  .providerContainer {
     .providerContent {
       padding: 0 20px 40px;
       width: 100%;
@@ -43,7 +43,7 @@
   }
 }
 @media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
-  .providerConteiner {
+  .providerContainer {
     .providerContent {
       padding: 0 30px 60px;
       width: 100%;
@@ -59,7 +59,7 @@
   }
 }
 @media screen and (min-width: device.$pcMin) {
-  .providerConteiner {
+  .providerContainer {
     .providerContent {
       margin: 0 auto;
       padding-bottom: 80px;

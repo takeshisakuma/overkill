@@ -1,0 +1,83 @@
+@use "../../styles/colors.scss";
+@use "../../styles/device.scss";
+@use "../../styles/fonts.scss";
+
+.supportGroup {
+  display: grid;
+  list-style-type: none;
+  .supportMember {
+    .supportImageWrapper {
+      display: flex;
+      .supportImage {
+        height: auto;
+        width: 100%;
+      }
+    }
+    .supportNameWrapper {
+      text-align: center;
+      .supportName {
+        color: colors.$textColor--black;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: device.$spMax) {
+  .supportGroup {
+    grid-template-columns: repeat(auto-fill, 50px);
+    justify-content: center;
+    margin: 0 auto;
+    .supportMember {
+      padding-bottom: 8px;
+      .supportImageWrapper {
+        height: 32px;
+        margin: 8px auto 0;
+        width: 32px;
+      }
+      .supportNameWrapper {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
+  .supportGroup {
+    grid-template-columns: repeat(auto-fill, 100px);
+    justify-content: center;
+    margin: 0 auto;
+    .supportMember {
+      padding-bottom: 12px;
+      .supportImageWrapper {
+        height: 50px;
+        margin: 12px auto 0;
+        width: 50px;
+      }
+      .supportNameWrapper {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+@media screen and (min-width: device.$pcMin) {
+  .supportGroup {
+    grid-template-columns: repeat(auto-fill, 175px);
+    .supportMember {
+      padding-bottom: 32px;
+      .supportImageWrapper {
+        height: 50px;
+        margin: 32px auto 0;
+        width: 50px;
+        .supportImage {
+          height: auto;
+          width: 100%;
+        }
+      }
+      .supportNameWrapper {
+        margin-top: 10px;
+      }
+    }
+  }
+}

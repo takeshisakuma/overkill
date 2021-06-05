@@ -11,7 +11,7 @@ const ProviderSection: FC<providerSectionType> = ({
 }) => {
   return (
     <>
-      <div className={styles.providerConteiner}>
+      <div className={styles.providerContainer}>
         <div className={styles.providerContent}>
           <div className={styles.sectionHeadingWrapper}>
             <SectionHeading>{headingText}</SectionHeading>

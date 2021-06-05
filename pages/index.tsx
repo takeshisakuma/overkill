@@ -5,6 +5,7 @@ import styles from "./index.module.scss";
 import HeaderSection from "../section/headerSection/HeaderSection";
 import VisualSection from "../section/visualSection/VisualSection";
 import AboutSection from "../section/aboutSection/AboutSection";
+import UnsupportSection from "../section/unsupportSection/UnsupportSection";
 import ProviderSection from "../section/providerSection/ProviderSection";
 import FooterSection from "../section/footerSection/FooterSection";
 
@@ -30,11 +31,57 @@ const Main = () => (
       ]}
       listNormal={[
         "Internet Explorer 10以前のバージョンはすでにサポートが終了しています。",
-        "2021年8月17日(日本時間では18日)にMicrosoft 365 アプリなどでInternet Explorerのサポートが終了が予告されています。",
-        "2022年6月15日(日本時間では16日)にInternet Explorer 11のサポートの終了が予告されています。",
+        "Internet Explorer 11は、2022年6月15日(日本時間では16日)にサポートの終了が予告されています。",
       ]}
       listCaution={[
         "Windows 10 LTSCやWindows Server上の Internet Explorer 11 デスクトップ アプリケーションは除く",
+      ]}
+    />
+
+    <UnsupportSection
+      headingText={
+        "すでに、多くの企業や団体がInternet Explorerのサポートを打ち切っています。"
+      }
+      listCaution={[
+        "WordPressは、7月リリース予定のVer.5.8以降非対応を告知",
+        "Microsoft 365は、2021年8月17日(日本時間では18日)でサポート終了を告知",
+        "Twitchは6日7日でサポート終了を告知",
+      ]}
+      service={[
+        { name: "Angular", img: "dev/angular.svg" },
+        { name: "artStation", img: "service/artstation.svg" },
+        { name: "Backlog", img: "service/backlog.svg" },
+        { name: "bandcamp", img: "service/bandcamp.svg" },
+        { name: "BASE", img: "service/base.svg" },
+        { name: "Beatport", img: "service/beatport.svg" },
+        { name: "Bootstrap", img: "dev/bootstrap.svg" },
+        { name: "CrowdWorks", img: "service/crowdworks.svg" },
+        { name: "DeviantArt", img: "service/deviantart.svg" },
+        { name: "dribbble", img: "service/dribbble.svg" },
+        { name: "Facebook", img: "service/facebook.svg" },
+        { name: "Feedly", img: "service/feedly.svg" },
+        { name: "flickr", img: "service/flickr.svg" },
+        { name: "GitHub", img: "service/github.svg" },
+        { name: "Google Analytics", img: "service/googleanalytics.svg" },
+        { name: "Google Earth", img: "service/googleearth.svg" },
+        { name: "Google Photos", img: "service/googlephotos.svg" },
+        { name: "Instagram", img: "service/instagram.svg" },
+        { name: "note", img: "service/note.svg" },
+        { name: "Notion", img: "service/notion.svg" },
+        { name: "Microsoft 365", img: "service/microsoft365.svg" },
+        { name: "Pinterest", img: "service/pinterest.svg" },
+        { name: "Pocket", img: "service/pocket.svg" },
+        { name: "Sketchfab", img: "service/sketchfab.svg" },
+        { name: "STORES", img: "service/stores.svg" },
+        { name: "STUDIO", img: "service/studio.svg" },
+        { name: "Trello", img: "service/trello.svg" },
+        { name: "Twitch", img: "service/twitch.svg" },
+        { name: "Twitter", img: "service/twitter.svg" },
+        { name: "Udemy", img: "service/udemy.svg" },
+        { name: "YouTube", img: "service/youtube.svg" },
+        { name: "YouTube Music", img: "service/youtubemusic.svg" },
+        { name: "Vue.js", img: "dev/vuejs.svg" },
+        { name: "WordPress", img: "dev/wordpress.svg" },
       ]}
     />
     {/*<img src="/overkill/test.png" />*/}

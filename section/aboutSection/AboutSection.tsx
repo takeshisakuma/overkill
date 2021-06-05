@@ -14,7 +14,7 @@ const AboutSection: FC<aboutSectionType> = ({
 }) => {
   return (
     <>
-      <div className={styles.aboutConteiner}>
+      <div className={styles.aboutContainer}>
         <div className={styles.aboutContent}>
           <div className={styles.sectionHeadingWrapper}>
             <SectionHeading>{headingText}</SectionHeading>

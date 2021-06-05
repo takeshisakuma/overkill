@@ -1,7 +1,7 @@
 
-type SectionTextType = {
+type sectionTextType = {
   paragraphText: string[];
 
 }
 
-export default SectionTextType;
+export default sectionTextType;

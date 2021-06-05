@@ -1,0 +1,67 @@
+@use "../../styles/colors.scss";
+@use "../../styles/fonts.scss";
+@use "../../styles/device.scss";
+
+@media screen and (max-width: device.$spMax) {
+  .unsupportContainer {
+    .unsupportContent {
+      overflow: hidden;
+      padding: 0 20px 40px;
+      width: 100%;
+
+      .sectionHeadingWrapper {
+        margin-top: 20px;
+      }
+
+      .serviceListWrapper {
+        margin-top: 10px;
+      }
+
+      .sectionListNormalWrapper {
+        margin-top: 16px;
+      }
+    }
+  }
+}
+@media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
+  .unsupportContainer {
+    .unsupportContent {
+      overflow: hidden;
+      padding: 0 30px 60px;
+      width: 100%;
+
+      .sectionHeadingWrapper {
+        margin-top: 30px;
+      }
+      .serviceListWrapper {
+        margin-top: 30px;
+      }
+
+      .sectionListNormalWrapper {
+        margin-top: 32px;
+      }
+    }
+  }
+}
+@media screen and (min-width: device.$pcMin) {
+  .unsupportContainer {
+    .unsupportContent {
+      margin: 0 auto;
+      overflow: hidden;
+      padding-bottom: 80px;
+      width: 1400px;
+
+      .sectionHeadingWrapper {
+        margin-top: 60px;
+      }
+
+      .serviceListWrapper {
+        margin-top: 40px;
+      }
+
+      .sectionListNormalWrapper {
+        margin-top: 30px;
+      }
+    }
+  }
+}
