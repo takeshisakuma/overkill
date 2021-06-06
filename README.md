@@ -48,6 +48,7 @@ https://github.com/takeshisakuma/overkill/blob/main/design/overkill.xd
 |Mixcloud|IE11でアクセスすると表示不良|
 |note|IE11でアクセスすると表示不良|
 |Notion|IE11でアクセスすると表示不良|
+|OKWAVE|https://secure.okbiz.okwave.jp/okwave-faq/faq/show/49?site_domain=help|
 |Pinterest|IE11でアクセスすると非対応と表示される|
 |Pocket|IE11でアクセスすると表示不良|
 |Scrapbox|IE11でアクセスすると非対応と表示される|

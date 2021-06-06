@@ -74,6 +74,7 @@ const Main = () => (
         { name: "note", img: "service/note.svg" },
         { name: "Notion", img: "service/notion.svg" },
         { name: "Microsoft 365", img: "service/microsoft365.svg" },
+        { name: "OKWAVE", img: "service/okwave.svg" },
         { name: "Pinterest", img: "service/pinterest.svg" },
         { name: "Pocket", img: "service/pocket.svg" },
         { name: "Skeb", img: "service/skeb.svg" },

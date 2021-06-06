@@ -13,6 +13,7 @@ const HeaderSection: FC<footerSectionType> = ({ children }) => {
           <div className={styles.footerHeadingWrapper}>
             <FooterHeading>{children}</FooterHeading>
           </div>
+
           <p className={styles.footerCreditParagraph}>
             廃墟の画像：
             <a

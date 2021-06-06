@@ -10,7 +10,7 @@ const CountdownTimer: FC<countdownTimerType> = ({}) => {
   const [secondsLeft, setSecondsLeft] = useState<string>();
 
   //月は0からなので1小さく指定
-  const endDate = new Date(2022, 5, 15);
+  const endDate = new Date(2022, 5, 16, 16);
   const endTime = endDate.getTime();
 
   const getCount = () => {

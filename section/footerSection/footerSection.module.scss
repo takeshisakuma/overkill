@@ -13,7 +13,6 @@
       font-family: "Noto Sans JP", sans-serif;
       .footerCreditAnchor {
         color: colors.$textColor--white;
-        font-family: "Noto Sans JP", sans-serif;
       }
     }
   }
@@ -27,6 +26,9 @@
       .footerHeadingWrapper {
         margin-top: 10px;
       }
+      .footerCreditParagraph {
+        @include fonts.rem(12);
+      }
     }
   }
 }
@@ -38,6 +40,9 @@
 
       .footerHeadingWrapper {
         margin-top: 20px;
+      }
+      .footerCreditParagraph {
+        @include fonts.rem(14);
       }
     }
   }
@@ -52,6 +57,10 @@
 
       .footerHeadingWrapper {
         margin-top: 40px;
+      }
+
+      .footerCreditParagraph {
+        @include fonts.rem(16);
       }
     }
   }
