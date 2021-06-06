@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Seo from "../components/seo/Seo";
-import styles from "./index.module.scss";
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import HeaderSection from "../section/headerSection/HeaderSection";
 import VisualSection from "../section/visualSection/VisualSection";

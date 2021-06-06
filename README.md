@@ -8,6 +8,13 @@ https://takeshisakuma.github.io/overkill/
 npm run dev
 http://localhost:3000/overkill/
 
+## Design
+Adobe XD
+
+### font
+- Noto Sans JP
+- Noto Serif JP
+- Roboto
 ## IE11対応状況
 
 |サービス名|確認方法|

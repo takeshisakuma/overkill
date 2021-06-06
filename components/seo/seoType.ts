@@ -6,6 +6,7 @@ type seoType = {
   imgUrl: string;
   pageImgWidth: number;
   pageImgHeight: number;
+  faviconUrl: string;
 }
 
 export default seoType;
