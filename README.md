@@ -9,8 +9,9 @@ npm run dev
 http://localhost:3000/overkill/
 
 ## Design
-Adobe XD
 
+### File(Adobe XD)
+https://github.com/takeshisakuma/overkill/blob/main/design/overkill.xd
 ### font
 - Noto Sans JP
 - Noto Serif JP
