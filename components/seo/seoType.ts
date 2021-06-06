@@ -2,8 +2,8 @@
 type seoType = {
   pageTitle: string;
   pageDescription: string;
-  pagePath: string;
-  pageImg: string;
+  pageUrl: string;
+  imgUrl: string;
   pageImgWidth: number;
   pageImgHeight: number;
 }

@@ -1,0 +1,43 @@
+@use "../../styles/colors.scss";
+@use "../../styles/device.scss";
+@use "../../styles/fonts.scss";
+
+.countNumber {
+  color: colors.$textColor--white;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+}
+
+.countUnit {
+  color: colors.$textColor--white;
+  font-family: "Noto Serif JP", serif;
+  font-weight: bold;
+}
+@media screen and (max-width: device.$spMax) {
+  .countNumber {
+    @include fonts.rem(32);
+  }
+
+  .countUnit {
+    @include fonts.rem(20);
+  }
+}
+
+@media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
+  .countNumber {
+    @include fonts.rem(60);
+  }
+
+  .countUnit {
+    @include fonts.rem(40);
+  }
+}
+@media screen and (min-width: device.$pcMin) {
+  .countNumber {
+    @include fonts.rem(150);
+  }
+
+  .countUnit {
+    @include fonts.rem(80);
+  }
+}

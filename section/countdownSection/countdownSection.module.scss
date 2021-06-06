@@ -1,0 +1,62 @@
+@use "../../styles/colors.scss";
+@use "../../styles/fonts.scss";
+@use "../../styles/device.scss";
+
+.countdownContainer {
+  background-color: #000;
+  .countdownContent {
+    overflow: hidden;
+
+    .countdownTimerWrapper {
+      text-align: right;
+    }
+  }
+}
+
+@media screen and (max-width: device.$spMax) {
+  .countdownContainer {
+    .countdownContent {
+      padding: 0 20px 40px;
+      width: 100%;
+
+      .sectionHeadingWrapper {
+        margin-top: 20px;
+      }
+      .countdownTimerWrapper {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+@media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
+  .countdownContainer {
+    .countdownContent {
+      padding: 0 30px 60px;
+      width: 100%;
+
+      .sectionHeadingWrapper {
+        margin-top: 30px;
+      }
+      .countdownTimerWrapper {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+@media screen and (min-width: device.$pcMin) {
+  .countdownContainer {
+    .countdownContent {
+      margin: 0 auto;
+
+      padding-bottom: 80px;
+      width: 1400px;
+
+      .sectionHeadingWrapper {
+        margin-top: 60px;
+      }
+      .countdownTimerWrapper {
+        margin-top: 40px;
+      }
+    }
+  }
+}

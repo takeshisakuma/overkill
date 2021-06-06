@@ -3,6 +3,7 @@
 @use "../../styles/fonts.scss";
 
 .sectionHeading {
+  color: colors.$textColor--black;
   font-family: "Noto Serif JP", serif;
 
   @media screen and (max-width: device.$spMax) {

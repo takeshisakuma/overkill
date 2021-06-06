@@ -2,11 +2,16 @@
 @use "../../styles/fonts.scss";
 @use "../../styles/device.scss";
 
+.aboutContainer {
+  background-color: #dde9f1;
+  .aboutContent {
+    overflow: hidden;
+  }
+}
+
 @media screen and (max-width: device.$spMax) {
   .aboutContainer {
-    background-color: #dde9f1;
     .aboutContent {
-      overflow: hidden;
       padding: 0 20px 40px;
       width: 100%;
 
@@ -26,9 +31,7 @@
 }
 @media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
   .aboutContainer {
-    background-color: #dde9f1;
     .aboutContent {
-      overflow: hidden;
       padding: 0 30px 60px;
       width: 100%;
 
@@ -48,10 +51,9 @@
 }
 @media screen and (min-width: device.$pcMin) {
   .aboutContainer {
-    background-color: #dde9f1;
     .aboutContent {
       margin: 0 auto;
-      overflow: hidden;
+
       padding-bottom: 80px;
       width: 1400px;
 

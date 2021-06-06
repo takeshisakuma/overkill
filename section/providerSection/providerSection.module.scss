@@ -3,23 +3,14 @@
 @use "../../styles/device.scss";
 
 .providerContainer {
-  background-image: url(../../public/img/time-371226_1920.jpg);
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.85);
+  background-image: url(../../public/img/time-371226_1920.webp);
   background-position-y: 40%;
 
   background-size: cover;
   position: relative;
   width: 100%;
-
-  &::before {
-    background-color: rgba(255, 255, 255, 0.85);
-    content: "";
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
 
   .providerContent {
     overflow: hidden;

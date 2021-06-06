@@ -6,6 +6,7 @@ import HeaderSection from "../section/headerSection/HeaderSection";
 import VisualSection from "../section/visualSection/VisualSection";
 import AboutSection from "../section/aboutSection/AboutSection";
 import UnsupportSection from "../section/unsupportSection/UnsupportSection";
+import CountdownSection from "../section/countdownSection/CountdownSection";
 import PastSection from "../section/pastSection/PastSection";
 import BrowserSection from "../section/browserSection/BrowserSection";
 import ProviderSection from "../section/providerSection/ProviderSection";
@@ -16,10 +17,13 @@ const Main = () => (
     <Seo
       pageTitle={"20220615"}
       pageDescription={"Internet Explorer まだ使っている人はいませんか？"}
-      pageImg={"https://takeshisakuma.github.io/overkill/ogp/ogp.png"}
+      imgUrl={"https://takeshisakuma.github.io/overkill/ogp/ogp.webp"}
+      faviconUrl={
+        "https://takeshisakuma.github.io/overkill/favicon/favicon.svg"
+      }
       pageImgWidth={1280}
       pageImgHeight={960}
-      pagePath={"https://takeshisakuma.github.io/overkill/"}
+      pageUrl={"https://takeshisakuma.github.io/overkill/"}
     />
     <HeaderSection>20220615</HeaderSection>
     <VisualSection>
@@ -87,6 +91,9 @@ const Main = () => (
         { name: "WordPress", img: "dev/wordpress.svg" },
       ]}
     />
+
+    <CountdownSection headingText="Internet Explorer 11サポート終了まで、あと" />
+
     <PastSection
       headingText="Internet Explorer 11が公開された2013年はこんな年でした"
       paragraphText={[

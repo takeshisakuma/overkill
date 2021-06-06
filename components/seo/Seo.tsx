@@ -5,37 +5,32 @@ import seoType from "./seoType";
 const Seo: FC<seoType> = ({
   pageTitle,
   pageDescription,
-  pagePath,
-  pageImg,
+  pageUrl,
+  imgUrl,
   pageImgWidth,
   pageImgHeight,
+  faviconUrl,
 }) => {
-  const title = pageTitle;
-  const description = pageDescription;
-  const url = pagePath;
-  const imgUrl = pageImg;
-  const imgWidth = pageImgWidth ? pageImgWidth : 1280;
-  const imgHeight = pageImgHeight ? pageImgHeight : 640;
-
   return (
     <Head>
-      <title>{title}</title>
+      <title>{pageTitle}</title>
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-      <meta name="description" content={description} />
-      <meta property="og:url" content={url} />
-      <meta property="og:title" content={title} />
-      <meta property="og:site_name" content={title} />
-      <meta property="og:description" content={description} />
+      <meta name="description" content={pageDescription} />
+      <meta property="og:url" content={pageUrl} />
+      <meta property="og:title" content={pageTitle} />
+      <meta property="og:site_name" content={pageTitle} />
+      <meta property="og:description" content={pageDescription} />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={imgUrl} />
-      <meta property="og:image:width" content={String(imgWidth)} />
-      <meta property="og:image:height" content={String(imgHeight)} />
+      <meta property="og:image:width" content={String(pageImgWidth)} />
+      <meta property="og:image:height" content={String(pageImgHeight)} />
+      <link rel="icon" href={faviconUrl} type="image/svg+xml" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet"
       />
-      <link rel="canonical" href={url} />
+      <link rel="canonical" href={pageUrl} />
     </Head>
   );
 };

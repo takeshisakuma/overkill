@@ -19,6 +19,7 @@
       }
 
       .eventListCardNameText {
+        color: colors.$textColor--black;
         font-family: "Noto Serif JP", serif;
         font-weight: bold;
       }
@@ -27,6 +28,7 @@
     .eventListGroupWrapper {
       .eventListGroup {
         .eventListMember {
+          color: colors.$textColor--black;
           font-family: "Noto Sans JP", sans-serif;
         }
       }

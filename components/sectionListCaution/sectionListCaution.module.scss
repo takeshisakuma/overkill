@@ -5,6 +5,7 @@
 .sectionListCautionGroup {
   list-style-type: none;
   .sectionListCautionMember {
+    color: colors.$textColor--black;
     font-family: "Noto Sans JP", sans-serif;
     position: relative;
     &::before {
@@ -18,6 +19,7 @@
   .sectionListCautionGroup {
     .sectionListCautionMember {
       @include fonts.rem(14);
+
       padding-left: 16px;
 
       &::before {
