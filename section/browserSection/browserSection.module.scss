@@ -1,0 +1,60 @@
+@use "../../styles/colors.scss";
+@use "../../styles/fonts.scss";
+@use "../../styles/device.scss";
+
+.browserContainer {
+  background-color: #f5d4af;
+  .sectionHeadingWrapper {
+    display: table;
+  }
+}
+
+@media screen and (max-width: device.$spMax) {
+  .browserContainer {
+    .browserContent {
+      overflow: hidden;
+      padding: 0 20px 40px;
+      width: 100%;
+
+      .sectionHeadingWrapper {
+        margin: 20px auto 0;
+      }
+      .browserListWrapper {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+@media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
+  .browserContainer {
+    .browserContent {
+      overflow: hidden;
+      padding: 0 30px 60px;
+      width: 100%;
+
+      .sectionHeadingWrapper {
+        margin: 30px auto 0;
+      }
+      .browserListWrapper {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+@media screen and (min-width: device.$pcMin) {
+  .browserContainer {
+    .browserContent {
+      margin: 0 auto;
+      overflow: hidden;
+      padding-bottom: 80px;
+      width: 1400px;
+
+      .sectionHeadingWrapper {
+        margin: 60px auto 0;
+      }
+      .browserListWrapper {
+        margin-top: 40px;
+      }
+    }
+  }
+}

@@ -7,6 +7,15 @@
   width: 100%;
   .footerContent {
     overflow: hidden;
+
+    .footerCreditParagraph {
+      color: colors.$textColor--white;
+      font-family: "Noto Sans JP", sans-serif;
+      .footerCreditAnchor {
+        color: colors.$textColor--white;
+        font-family: "Noto Sans JP", sans-serif;
+      }
+    }
   }
 }
 

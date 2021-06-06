@@ -1,6 +1,9 @@
+@use 'sass:math';
+
 @mixin rem($size) {
   font-size: $size + px; /*IE9以下で反映されるよう記述*/
-  font-size: ($size / 16) + rem;
+  /* font-size: ($size / 16) + rem;*/
+  font-size: math.div($size, 16) + rem;
 }
 
 /* 使用例：100pxをremで

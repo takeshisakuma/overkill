@@ -1,0 +1,180 @@
+@use "../../styles/colors.scss";
+@use "../../styles/device.scss";
+@use "../../styles/fonts.scss";
+
+.browserListCardGroup {
+  list-style-type: none;
+  .browserListCardMember {
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-repeat: no-repeat;
+
+    .browserListNameWrapper {
+      text-align: center;
+      .browserListName {
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+      }
+    }
+    .browserListTextWrapper {
+      .browserListText {
+        font-family: "Noto Sans JP", sans-serif;
+        line-height: 1.8;
+      }
+    }
+    .browserListButtonWrapper {
+      margin-top: 30px;
+      text-align: center;
+      .browserListButton {
+        background-color: #ff634f;
+        display: inline-block;
+        transition: opacity 0.1s ease-in-out;
+        &:hover {
+          opacity: 0.6;
+        }
+        .browserListAnchor {
+          color: colors.$textColor--white;
+          display: inline-block;
+          font-family: "Roboto", sans-serif;
+          position: relative;
+          text-decoration: none;
+          &::after {
+            background-image: url("/overkill/icon/icon_design_link.svg");
+            background-repeat: no-repeat;
+            content: "　";
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: device.$spMax) {
+  .browserListCardGroup {
+    .browserListCardMember {
+      background-position: -19px -77px;
+      background-size: 75%;
+      border-radius: 8px;
+      overflow: hidden;
+      padding: 0 20px 20px;
+      width: 100%;
+
+      & + .browserListCardMember {
+        margin-top: 20px;
+      }
+
+      .browserListNameWrapper {
+        margin-top: 20px;
+        .browserListName {
+          @include fonts.rem(30);
+        }
+      }
+      .browserListTextWrapper {
+        margin-top: 10px;
+        .browserListText {
+          @include fonts.rem(14);
+        }
+      }
+      .browserListButtonWrapper {
+        margin-top: 20px;
+
+        .browserListButton {
+          border-radius: 30px;
+          .browserListAnchor {
+            @include fonts.rem(20);
+            padding: 10px 55px 10px 40px;
+            &::after {
+              @include fonts.rem(16);
+              margin-top: 3px;
+              right: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
+  .browserListCardGroup {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    .browserListCardMember {
+      background-position: -19px -77px;
+      background-size: 75%;
+      border-radius: 8px;
+      padding: 0 30px 30px;
+
+      .browserListNameWrapper {
+        margin-top: 30px;
+        .browserListName {
+          @include fonts.rem(40);
+        }
+      }
+      .browserListTextWrapper {
+        margin-top: 10px;
+        .browserListText {
+          @include fonts.rem(16);
+        }
+      }
+      .browserListButtonWrapper {
+        margin-top: 30px;
+        .browserListButton {
+          border-radius: 30px;
+          .browserListAnchor {
+            @include fonts.rem(20);
+            padding: 10px 55px 10px 40px;
+            &::after {
+              @include fonts.rem(16);
+              margin-top: 3px;
+              right: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: device.$pcMin) {
+  .browserListCardGroup {
+    display: flex;
+    justify-content: space-between;
+    .browserListCardMember {
+      background-position: -19px -77px;
+      background-size: 75%;
+      border-radius: 8px;
+      padding: 0 30px 30px;
+      width: 450px;
+
+      .browserListNameWrapper {
+        margin-top: 30px;
+        .browserListName {
+          @include fonts.rem(40);
+        }
+      }
+      .browserListTextWrapper {
+        margin-top: 10px;
+        .browserListText {
+          @include fonts.rem(16);
+        }
+      }
+      .browserListButtonWrapper {
+        margin-top: 30px;
+        .browserListButton {
+          border-radius: 30px;
+          .browserListAnchor {
+            @include fonts.rem(20);
+            padding: 10px 55px 10px 40px;
+            &::after {
+              @include fonts.rem(16);
+              margin-top: 3px;
+              right: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

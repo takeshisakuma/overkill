@@ -1,8 +1,11 @@
 type pastSectionType = {
   headingText: string;
   paragraphText: string[];
-  listNormal: string[];
-  listCaution: string[];
+  eventData: {
+    name: string;
+    img: string;
+    list: string[];
+  }[];
 };
 
 export default pastSectionType;

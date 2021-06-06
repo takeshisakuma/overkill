@@ -7,6 +7,7 @@ import VisualSection from "../section/visualSection/VisualSection";
 import AboutSection from "../section/aboutSection/AboutSection";
 import UnsupportSection from "../section/unsupportSection/UnsupportSection";
 import PastSection from "../section/pastSection/PastSection";
+import BrowserSection from "../section/browserSection/BrowserSection";
 import ProviderSection from "../section/providerSection/ProviderSection";
 import FooterSection from "../section/footerSection/FooterSection";
 
@@ -93,20 +94,58 @@ const Main = () => (
         `それでは、2013年の出来事を振り返ってみましょう。
         `,
       ]}
-      listNormal={[
-        "Internet Explorer 10以前のバージョンはすでにサポートが終了しています。",
-        "Internet Explorer 11は、2022年6月15日(日本時間では16日)にサポートの終了が予告されています。",
-      ]}
-      listCaution={[
-        "Windows 10 LTSCやWindows Server上の Internet Explorer 11 デスクトップ アプリケーションは除く",
+      eventData={[
+        {
+          name: "新語・流行語大賞",
+          img: "icon_design_trend.svg",
+          list: [
+            "今でしょ!（林修）",
+            "お・も・て・な・し（滝川クリステル）",
+            "じぇじぇじぇ（あまちゃん）",
+            "倍返し（半沢直樹）",
+          ],
+        },
+        {
+          name: "出来事",
+          img: "icon_design_event.svg",
+          list: [
+            "NHK大河ドラマ『八重の桜』",
+            "NTTドコモがiPhoneの提供開始",
+            "バラク・オバマ大統領が続投でアメリカ大統領に就任",
+            "ベネディクト16世の辞任",
+          ],
+        },
       ]}
     ></PastSection>
+    <BrowserSection
+      headingText="Internet Explorerから乗り換えるなら"
+      browserData={[
+        {
+          name: "Microsoft Edge",
+          text: "Internet Explorerが必要なWebサイトに対応する「IE モード」を内蔵したWebブラウザ",
+          url: "https://www.microsoft.com/ja-jp/edge",
+          img: "edge",
+        },
+        {
+          name: "Google Chrome",
+          text: "Googleのサービスとの連携に優れた、シェア一位のWebブラウザ",
+          url: "https://www.google.com/intl/ja_jp/chrome/",
+          img: "chrome",
+        },
+        {
+          name: "Mozilla Firefox",
+          text: "プライバシー、セキュリティに優れたオープンソースのWebブラウザ",
+          url: "https://www.mozilla.org/ja/firefox/new/",
+          img: "firefox",
+        },
+      ]}
+    />
     <ProviderSection
       headingText={"Webサービス提供者様に向けて"}
       paragraphText={[
         `Internet Explorer以外のモダンな主要Webブラウザーには、2013年以降も新しい機能が数多く追加され続けています。${"\n"}そのため、あなたのサービスで「Webで最新の機能を提供したい」と考えるなら、IE11の対応は諦める必要があります。`,
         `業務用Webシステムの改修はコストがかかるため、現状維持でInternet Explorerで古いWebアプリケーションを使い続けているケースがあります。${"\n"}しかし、最新のWebブラウザーに移行するほうがセキュリティ的にも安全で、長期的に見てより良い選択です。`,
-        `Internet Explorer以外のブラウザへの対応には時間がかかります。${"\n"}2022年6月15日(日本時間では16日)以降はIEの起動をするとedgeにリダイレクトされるようになります。${"\n"}サポートが切れてから自社サイトをIE以外に対応させるのでは間に合いません。`,
+        `Internet Explorer以外のブラウザへの対応には時間がかかります。${"\n"}2022年6月15日(日本時間では16日)以降はIEの起動をするとMicrosoft Edgeにリダイレクトされるようになります。${"\n"}サポートが切れてから自社サイトをIE以外に対応させるのでは間に合いません。`,
       ]}
     ></ProviderSection>
     <FooterSection>Credit</FooterSection>
