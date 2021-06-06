@@ -11,8 +11,11 @@ import BrowserSection from "../section/browserSection/BrowserSection";
 import ProviderSection from "../section/providerSection/ProviderSection";
 import FooterSection from "../section/footerSection/FooterSection";
 
+import IeChecker from "../components/ieChecker/IeChecker";
+
 const Main = () => (
   <>
+    <IeChecker />
     <Seo
       pageTitle={"20220615"}
       pageDescription={"Internet Explorer まだ使っている人はいませんか？"}

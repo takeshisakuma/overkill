@@ -23,7 +23,9 @@ const EventList: FC<eventListType> = ({ eventData }) => {
             <div className={styles.eventListGroupWrapper}>
               <ul className={styles.eventListGroup}>
                 {member.list.map((eventName, index) => (
-                  <li className={styles.eventListMember}>{eventName}</li>
+                  <li className={styles.eventListMember} key={index}>
+                    {eventName}
+                  </li>
                 ))}
               </ul>
             </div>

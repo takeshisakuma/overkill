@@ -1,0 +1,44 @@
+@use "../../styles/colors.scss";
+@use "../../styles/device.scss";
+@use "../../styles/fonts.scss";
+
+.ieOverlay {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  .ieWindow {
+    background-color: white;
+    border-radius: 4px;
+    padding: 0 40px 40px;
+    .sectionHeadingWrapper {
+      margin-top: 40px;
+    }
+    .sectionTextWrapper {
+      margin-top: 20px;
+    }
+
+    .ieOptionGroupWrapper {
+      margin-left: 30px;
+      margin-top: 20px;
+
+      .ieOptionGroup {
+        .ieOptionMember {
+          & + .ieOptionMember {
+            margin-top: 10px;
+          }
+          .ieOptionAnchor {
+            color: colors.$textColor--black;
+            font-family: "Noto Sans JP", sans-serif;
+          }
+        }
+      }
+    }
+  }
+}
