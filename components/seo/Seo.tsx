@@ -31,6 +31,9 @@ const Seo: FC<seoType> = ({
         rel="stylesheet"
       />
       <link rel="canonical" href={pageUrl} />
+
+      {/* Share APIPolyfill(Firefox用) */}
+      <script src="https://unpkg.com/share-api-polyfill/dist/share-min.js"></script>
     </Head>
   );
 };

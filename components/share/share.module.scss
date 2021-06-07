@@ -1,0 +1,26 @@
+@use "../../styles/colors.scss";
+@use "../../styles/device.scss";
+@use "../../styles/fonts.scss";
+
+@media screen and (max-width: device.$spMax) {
+  .shareButton {
+    height: 20px;
+    width: 20px;
+  }
+}
+@media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
+  .shareButton {
+    height: 24px;
+    width: 24px;
+  }
+}
+@media screen and (min-width: device.$pcMin) {
+  .shareButton {
+    height: 30px;
+    width: 30px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

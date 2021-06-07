@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+
 import Seo from "../components/seo/Seo";
 
 import HeaderSection from "../section/headerSection/HeaderSection";
@@ -13,6 +14,7 @@ import FooterSection from "../section/footerSection/FooterSection";
 
 import IeChecker from "../components/ieChecker/IeChecker";
 import LoadingChecker from "../components/loadingChecker/LoadingChecker";
+
 const Main = () => (
   <>
     <LoadingChecker />

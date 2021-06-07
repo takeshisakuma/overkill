@@ -6,6 +6,8 @@
   width: 100%;
 
   .headerContent {
+    display: flex;
+    justify-content: space-between;
     overflow: hidden;
   }
 }
@@ -13,11 +15,8 @@
 @media screen and (max-width: device.$spMax) {
   .headerContainer {
     .headerContent {
+      margin-top: 10px;
       padding: 0 10px 10px;
-
-      .headerHeadingWrapper {
-        margin-top: 10px;
-      }
     }
   }
 }
@@ -25,11 +24,8 @@
 @media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
   .headerContainer {
     .headerContent {
+      margin-top: 20px;
       padding: 0 20px 20px;
-
-      .headerHeadingWrapper {
-        margin-top: 20px;
-      }
     }
   }
 }
@@ -37,12 +33,12 @@
 @media screen and (min-width: device.$pcMin) {
   .headerContainer {
     .headerContent {
-      margin: 0 auto;
+      margin: 40px auto 0;
       padding-bottom: 40px;
       width: 1400px;
 
-      .headerHeadingWrapper {
-        margin-top: 40px;
+      .shareWrapper {
+        margin-top: 4px;
       }
     }
   }
