@@ -1,0 +1,55 @@
+@use "../../styles/colors.scss";
+@use "../../styles/device.scss";
+@use "../../styles/fonts.scss";
+
+.loadingOverlay {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+
+  .loadingSpinner {
+    animation: spin 1s linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.4);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@media screen and (max-width: device.$spMax) {
+  .loadingOverlay {
+    .loadingSpinner {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+@media screen and (min-width: device.$tabMin) and (max-width: device.$tabMax) {
+  .loadingOverlay {
+    .loadingSpinner {
+      height: 80px;
+      width: 80px;
+    }
+  }
+}
+@media screen and (min-width: device.$pcMin) {
+  .loadingOverlay {
+    .loadingSpinner {
+      height: 100px;
+      width: 100px;
+    }
+  }
+}

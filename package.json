@@ -8,14 +8,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "nojekyll": "cpx \".nojekyll\" out ",
     "export": "next build && next export",
     "ghp": "gh-pages -d out",
     "lint:scss": "stylelint \"pages/*.scss\"",
     "format:scss": "stylelint --fix \"pages/*.scss\"",
-    "deploy": "next build && next export && touch out/.nojekyll",
-    "postdeploy": "gh-pages -d out",
-    "deploy1": "run-s build export nojekyll ghp"
+    "deploy": "next build && next export",
+    "postdeploy": "gh-pages -d out"
   },
   "repository": {
     "type": "git",

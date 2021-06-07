@@ -12,9 +12,10 @@ import ProviderSection from "../section/providerSection/ProviderSection";
 import FooterSection from "../section/footerSection/FooterSection";
 
 import IeChecker from "../components/ieChecker/IeChecker";
-
+import LoadingChecker from "../components/loadingChecker/LoadingChecker";
 const Main = () => (
   <>
+    <LoadingChecker />
     <IeChecker />
     <Seo
       pageTitle={"20220615"}
