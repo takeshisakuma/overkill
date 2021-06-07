@@ -10,7 +10,7 @@ const LoadingChecker: FC<loadingCheckerType> = () => {
     if (process.browser) {
       setTimeout(() => {
         endLoading();
-      }, 20000);
+      }, 2000);
     }
   });
 
