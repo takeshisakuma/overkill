@@ -8,7 +8,10 @@ const ServiceList: FC<serviceListType> = ({ service }) => {
     <>
       <ul className={styles.supportGroup}>
         {service.map((member, index) => (
-          <li key={index} className={styles.supportMember}>
+          <li
+            key={index}
+            className={[styles.supportMember, "serviceIconAnimation"].join(" ")}
+          >
             <div className={styles.supportImageWrapper}>
               <img
                 src={`/overkill/${member.img}`}

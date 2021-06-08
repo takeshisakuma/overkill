@@ -5,7 +5,10 @@ import styles from "./countdownSection.module.scss";
 import CountdownHeading from "../../components/countdownHeading/CountdownHeading";
 import CountdownTimer from "../../components/countdownTimer/CountdownTimer";
 
-const CountdownSection: FC<countdownSectionType> = ({ headingText }) => {
+const CountdownSection: FC<countdownSectionType> = ({
+  countdownTimerAnimation,
+  headingText,
+}) => {
   return (
     <>
       <div className={styles.countdownContainer}>
@@ -13,7 +16,10 @@ const CountdownSection: FC<countdownSectionType> = ({ headingText }) => {
           <div className={styles.sectionHeadingWrapper}>
             <CountdownHeading>{headingText}</CountdownHeading>
           </div>
-          <div className={styles.countdownTimerWrapper}>
+          <div
+            className={styles.countdownTimerWrapper}
+            id={countdownTimerAnimation}
+          >
             <CountdownTimer />
           </div>
         </div>

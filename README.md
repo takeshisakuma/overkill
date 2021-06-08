@@ -58,7 +58,7 @@ https://github.com/takeshisakuma/overkill/blob/main/design/overkill.xd
 |STUDIO|https://blog.studio.design/ja/posts/IE-support|
 |Trello|IE11でアクセスすると非対応と表示される|
 |tumblr|IE11でアクセスすると表示不良|
-|Twitch|IE11でアクセスすると6/7から非対応と表示される|
+|Twitch|IE11でアクセスすると非対応と表示される|
 |Twitter|IE11でアクセスすると非対応と表示される|
 |Udemy|IE11でアクセスすると非対応と表示される|
 |YouTube|IE11でアクセスすると非対応と表示される|

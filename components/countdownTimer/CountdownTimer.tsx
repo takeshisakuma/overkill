@@ -63,7 +63,7 @@ const CountdownTimer: FC<countdownTimerType> = ({}) => {
 
   return (
     <>
-      <p className={styles.aaa}>
+      <p>
         <span className={styles.countNumber}> {daysLeft}</span>
         <span className={styles.countUnit}>日</span>
 

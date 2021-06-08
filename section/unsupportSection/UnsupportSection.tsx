@@ -5,6 +5,7 @@ import styles from "./unsupportSection.module.scss";
 import SectionHeading from "../../components/sectionHeading/SectionHeading";
 import ServiceList from "../../components/serviceList/ServiceList";
 import SectionListCaution from "../../components/sectionListCaution/SectionListCaution";
+
 const UnsupportSection: FC<unsupportSectionType> = ({
   headingText,
   listCaution,

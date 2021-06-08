@@ -1,0 +1,7 @@
+@use "./styles/device.scss";
+
+@media screen and (min-width: device.$pcMin) {
+  body {
+    min-width: 1400px;
+  }
+}

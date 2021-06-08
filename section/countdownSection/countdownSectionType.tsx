@@ -1,4 +1,5 @@
 type countdownSectionType = {
+  countdownTimerAnimation: string;
   headingText: string;
 };
 

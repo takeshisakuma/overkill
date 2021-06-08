@@ -1,7 +1,7 @@
 
-type sectionHeadingType = {
+type countdownTimerType = {
 
 
 }
 
-export default sectionHeadingType;
+export default countdownTimerType;

@@ -10,7 +10,9 @@ const BrowserList: FC<browserListType> = ({ browserData }) => {
         {browserData.map((member, index) => (
           <li
             key={index}
-            className={styles.browserListCardMember}
+            className={[styles.browserListCardMember, "browserAnimation"].join(
+              " "
+            )}
             style={{
               backgroundImage: `url(/overkill/browser/${member.img}.svg)`,
             }}

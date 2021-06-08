@@ -8,7 +8,10 @@ const EventList: FC<eventListType> = ({ eventData }) => {
     <>
       <ul className={styles.eventListCardGroup}>
         {eventData.map((member, index) => (
-          <li key={index} className={styles.eventListCardMember}>
+          <li
+            key={index}
+            className={[styles.eventListCardMember, "eventAnimation"].join(" ")}
+          >
             <div className={styles.eventListCardNameWrapper}>
               <div className={styles.eventListImageWrapper}>
                 <img

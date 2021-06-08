@@ -1,9 +1,9 @@
 import React, { FC } from "react";
-import countdownHeadingType from "./countdownHeadingType";
+import countdownTimerType from "./countdownHeadingType";
 
 import styles from "./countdownHeading.module.scss";
 
-const CountdownHeading: FC<countdownHeadingType> = ({ children }) => {
+const CountdownHeading: FC<countdownTimerType> = ({ children }) => {
   const HeaderText = children;
 
   return (
