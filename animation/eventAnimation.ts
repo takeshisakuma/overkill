@@ -19,6 +19,7 @@ const setAnimation = () => {
       y: 0,
       scale: 1,
       duration: 0.6,
+      stagger: 0.4,
 
       scrollTrigger: {
         trigger: ".eventAnimation",

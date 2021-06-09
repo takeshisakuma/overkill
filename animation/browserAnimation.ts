@@ -19,6 +19,7 @@ const setAnimation = () => {
       scale: 1,
       rotate: 0,
       duration: 0.6,
+      stagger: 0.2,
 
       scrollTrigger: {
         trigger: ".browserAnimation",

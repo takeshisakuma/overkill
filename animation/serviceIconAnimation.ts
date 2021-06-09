@@ -16,7 +16,8 @@ const setAnimation = () => {
       x: 0,
       y: 0,
       scale: 1,
-      duration: 1,
+      duration: 0.5,
+      stagger: 0.1,
 
       scrollTrigger: {
         trigger: ".serviceIconAnimation",
