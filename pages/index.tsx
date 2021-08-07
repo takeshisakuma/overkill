@@ -72,8 +72,9 @@ const Main = () => {
           "すでに、多くの企業や団体がInternet Explorerのサポートを打ち切っています。"
         }
         listCaution={[
-          "WordPressは、7月リリース予定のVer.5.8以降非対応を告知",
           "Microsoft 365は、2021年8月17日(日本時間では18日)でサポート終了を告知",
+          "ニコニコ動画は、2021年9月8日以でサポート終了を告知",
+          "Zoomは、2021年9月30日でInternet Explorer 11のサポートを終了を告知",
         ]}
         service={[
           { name: "Angular", img: "dev/angular.svg" },
@@ -93,7 +94,9 @@ const Main = () => {
           { name: "Google Analytics", img: "service/googleanalytics.svg" },
           { name: "Google Earth", img: "service/googleearth.svg" },
           { name: "Google Photos", img: "service/googlephotos.svg" },
+          { name: "Hatena Bookmark", img: "service/hatenabookmark.svg" },
           { name: "Instagram", img: "service/instagram.svg" },
+          { name: "niconico video", img: "service/niconicovideo.svg" },
           { name: "note", img: "service/note.svg" },
           { name: "Notion", img: "service/notion.svg" },
           { name: "Microsoft 365", img: "service/microsoft365.svg" },
@@ -112,6 +115,7 @@ const Main = () => {
           { name: "YouTube Music", img: "service/youtubemusic.svg" },
           { name: "Vue.js", img: "dev/vuejs.svg" },
           { name: "WordPress", img: "dev/wordpress.svg" },
+          { name: "Zoom", img: "service/zoom.svg" },
         ]}
       />
 

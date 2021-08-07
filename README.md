@@ -62,7 +62,8 @@ https://github.com/takeshisakuma/overkill/blob/main/design/overkill.xd
 |Twitter|IE11でアクセスすると非対応と表示される|
 |Udemy|IE11でアクセスすると非対応と表示される|
 |YouTube|IE11でアクセスすると非対応と表示される|
-|YouTube Music|IE11でアクセスすると非対応と表示される|
+|Zoom|2021/9/30にサポート終了|
+|ニコニコ動画|2021/9/8にサポート終了 |
 |はてなブックマーク|https://bookmark.hatenastaff.com/entry/2020/08/13/111055 |
 
 
